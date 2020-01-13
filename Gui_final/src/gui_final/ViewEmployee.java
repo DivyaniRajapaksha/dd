@@ -81,7 +81,6 @@ public class ViewEmployee extends javax.swing.JFrame {
         btnImage = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         feedback_back = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         feedback_home = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
 
@@ -155,9 +154,6 @@ public class ViewEmployee extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/arrow-pointing-to-right.png"))); // NOI18N
-        jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-
         feedback_home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/home.png"))); // NOI18N
         feedback_home.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         feedback_home.addActionListener(new java.awt.event.ActionListener() {
@@ -177,8 +173,6 @@ public class ViewEmployee extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(feedback_back, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(feedback_home, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -191,7 +185,6 @@ public class ViewEmployee extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
                     .addComponent(feedback_home, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(feedback_back, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
@@ -220,11 +213,15 @@ public class ViewEmployee extends javax.swing.JFrame {
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void feedback_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_feedback_backActionPerformed
-
+        addEmployee a=new  addEmployee();
+        a.setVisible(true);
+        dispose();
     }//GEN-LAST:event_feedback_backActionPerformed
 
     private void feedback_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_feedback_homeActionPerformed
-
+        NewJFrame s= new NewJFrame();
+        s.setVisible(true);
+        dispose();
     }//GEN-LAST:event_feedback_homeActionPerformed
 
     /**
@@ -266,7 +263,6 @@ public class ViewEmployee extends javax.swing.JFrame {
     private javax.swing.JButton btnImage;
     private javax.swing.JButton feedback_back;
     private javax.swing.JButton feedback_home;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

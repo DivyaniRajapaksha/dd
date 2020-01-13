@@ -19,7 +19,7 @@ public class adminSett extends javax.swing.JFrame {
     public adminSett() {
         initComponents();
         
-         setTitle("Cafe de` Pablo");
+         setTitle("Cafe de` Pablo - Admin");
          
        
         setAlwaysOnTop(true);
@@ -298,9 +298,9 @@ public class adminSett extends javax.swing.JFrame {
                         .addComponent(jButton5)
                         .addGap(36, 36, 36)
                         .addComponent(jButton1)
-                        .addGap(28, 28, 28)
+                        .addGap(36, 36, 36)
                         .addComponent(jButton2)
-                        .addContainerGap(378, Short.MAX_VALUE))
+                        .addContainerGap(370, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -379,7 +379,9 @@ public class adminSett extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        loyaltyadminview a=new loyaltyadminview();
+        a.setVisible(true);
+        dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
