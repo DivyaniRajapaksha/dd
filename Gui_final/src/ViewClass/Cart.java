@@ -133,4 +133,20 @@ public class Cart {
     public void setTotPrice(double totPrice) {
         this.totPrice = totPrice;
     }
+    
+     public void removeItems(String iCode){
+      
+       Iterator<Cart > itr = al.iterator();
+        while (itr.hasNext()) {
+           
+            Cart i2=itr.next();
+             
+             if(i2.fId.equalsIgnoreCase(iCode)){
+                 System.out.println("hi1111111111111111111");
+                 itr.remove();
+             }
+            
+        }
+        
+    }
 }
