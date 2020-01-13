@@ -57,6 +57,7 @@ public class addFood extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         feedback_back = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         feedback_home = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -89,6 +90,9 @@ public class addFood extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/arrow-pointing-to-right.png"))); // NOI18N
+        jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+
         feedback_home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gui_final/home.png"))); // NOI18N
         feedback_home.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         feedback_home.addActionListener(new java.awt.event.ActionListener() {
@@ -108,6 +112,8 @@ public class addFood extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(feedback_back, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(feedback_home, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -120,6 +126,7 @@ public class addFood extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
                     .addComponent(feedback_home, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(feedback_back, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
@@ -260,9 +267,9 @@ public class addFood extends javax.swing.JFrame {
                                 .addGap(28, 28, 28)
                                 .addComponent(details, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
+                        .addGap(41, 41, 41)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35)
+                        .addGap(26, 26, 26)
                         .addComponent(viewbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(154, Short.MAX_VALUE))
         );
@@ -308,15 +315,11 @@ public class addFood extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void feedback_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_feedback_backActionPerformed
-      adminSett a=new adminSett();
-        a.setVisible(true);
-        dispose();
+     
     }//GEN-LAST:event_feedback_backActionPerformed
 
     private void feedback_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_feedback_homeActionPerformed
-       NewJFrame s= new NewJFrame();
-        s.setVisible(true);
-        dispose();
+       
     }//GEN-LAST:event_feedback_homeActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -434,6 +437,7 @@ public class addFood extends javax.swing.JFrame {
     private javax.swing.JButton feedback_back;
     private javax.swing.JButton feedback_home;
     private javax.swing.JTextField inumber;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
